@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'accounts/home.html')
     
 def login_view(request):
     if request.method == 'POST':
