@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: django-login-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn account.wsgi
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: account.settings
+      
