@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 15%;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .btn {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            background-color: #4285f4;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Login App</h1>
+    <a href="{% url 'login' %}" class="btn">Login</a>
+    <a href="{% url 'register' %}" class="btn">Register</a>
+</body>
+</html>
